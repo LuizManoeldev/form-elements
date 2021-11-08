@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background-image:  url(img/Geography\ of\ Robots.gif);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.conteiner {
+    background-color: white;
+    min-width: 350px;
+    min-height: 48vh;
+    border-radius:10px;
+    padding: 1.5rem;
+    box-shadow: 5px 5px 15px rgba(1,0,0,1);
+
+
+}
+
+
+
+.conteiner h1 {
+    text-align: center;
+    color: white;
+    background:linear-gradient(to left, #4776E6, #8e54e9);
+    font-weight: 300;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    max-width:100%;
+    transition: all 0.5s ease;
+}
+.conteiner h1:hover{
+    letter-spacing: 5px;
+    background:linear-gradient(to right, #4776E6, #8e54e9);
+}
+
+.input-field .underline::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.input-field .underline::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background:linear-gradient(to right, #4776E6, #8e54e9);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+}
+
+.input-field input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+.input-field {
+    position: relative;
+   
+}
+
+.input-field:first-child{
+    margin-bottom: 1.5rem;
+}
+
+.input-field input{
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="submit"] {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    cursor: pointer;
+    min-height: 2rem;
+    background:linear-gradient(to left, #4776E6, #8e54e9);
+    color: white;
+    font-weight: 300;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 5px;
+    background:linear-gradient(to right, #4776E6, #8e54e9);
+
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+
+footer span {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+footer span:hover {
+    letter-spacing: 5px;
+}
+
+
+.social-field {
+    padding: 0.4rem;
+    width: 100%;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.social-field:hover{
+    letter-spacing: 2px;
+}
+
+.social-field a {
+    text-decoration: none;
+    color:white;
+}
+.social-field a i {
+    margin: 0 0,5rem;
+    width: 15px;
+}
+
+.social-field.twitter{
+    background: linear-gradient(to right, #56a7f2, #468aca);
+   
+    
+}
+.social-field.facebook{
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    
+}
