@@ -1,3 +1,5 @@
-Formulario de Login - Apenas Estilo.
+Formulario de Login - Treino CSS.
+- Display Flex
+- Animações
 
 
